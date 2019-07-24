@@ -3,7 +3,7 @@ package loge
 import (
 	"bufio"
 	"log"
-	"loge/datextractor"
+	"github.com/dmarciniak/loge/datextractor"
 	"os"
 )
 

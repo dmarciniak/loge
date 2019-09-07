@@ -11,6 +11,8 @@ var (
 	rgx, _ = regexp.Compile(`[0-9]{4}[-][0-9]{2}[-][0-9]{2}[T\s][0-9]{2}:[0-9]{2}:[0-9]{2}([.,][0-9]{0,3})?`)
 )
 
+// Extract method extracted date from string
+// return: raw date string, date in Time and bool information about successful
 func Extract(str string) (string, time.Time, bool) {
 	timeStr := rgx.FindString(str)
 	if timeStr == "" {
